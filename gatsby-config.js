@@ -1,22 +1,24 @@
+const config = require('./config');
+
 module.exports = {
-	siteMetadata: {
-		title: 'Gatsby Starter Aerial'
-	},
-	plugins: [
-		'gatsby-plugin-react-helmet',
-		{
-			resolve: `gatsby-plugin-manifest`,
-			options: {
-				name: 'Aerial',
-				short_name: 'starter',
-				start_url: '/',
-				background_color: '#663399',
-				theme_color: '#663399',
-				display: 'standalone',
-				icon: 'src/assets/img/website-icon.png' // This path is relative to the root of the site.
-			}
-		},
-		'gatsby-plugin-sass',
-		'gatsby-plugin-offline'
-	]
+  siteMetadata: {
+    title: config.siteTitle,
+  },
+  plugins: [
+    'gatsby-plugin-react-helmet',
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: config.manifestName,
+        short_name: config.manifestShortName,
+        start_url: config.manifestStartUrl,
+        background_color: config.manifestBackgroundColor,
+        theme_color: config.manifestThemeColor,
+        display: config.manifestDisplay,
+        icon: config.manifestIcon, // This path is relative to the root of the site.
+      },
+    },
+    'gatsby-plugin-sass',
+    'gatsby-plugin-offline',
+  ],
 };
