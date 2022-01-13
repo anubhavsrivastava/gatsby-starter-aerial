@@ -1,10 +1,10 @@
 {
-  "name": "gatsby-starter-hyperspace",
-  "version": "0.0.2",
-  "description": "Gatsby.js V4 starter template based on Hyperspace by HTML5 UP",
+  "name": "gatsby-starter-aerial",
+  "version": "0.0.3",
+  "description": "Gatsby.js V4 starter template based on Aerial by HTML5 UP",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anubhavsrivastava/gatsby-starter-hyperspace.git"
+    "url": "git+https://github.com/anubhavsrivastava/gatsby-starter-aerial.git"
   },
   "author": {
     "name": "Anubhav Srivastava",
